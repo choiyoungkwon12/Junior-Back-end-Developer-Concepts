@@ -1,84 +1,64 @@
 
-# 개인적으로 추천하는 입문 학습 흐름
-
-## 자바 입문부터 스프링 입문까지
+# 개인적으로 추천하는 백엔드 입문 학습 흐름
 
 <br/>
 
-### **자바 기본서 항목 1독**
-
-- [https://lob-dev.tistory.com/entry/Java의-Reflection-API](https://lob-dev.tistory.com/entry/Java%EC%9D%98-Reflection-API)
-
-<br/>
-
-### **객체 지향의 사실과 오해**
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/67903919/147674116-80149e7b-75ce-4c1f-8c96-e6addb0eed08.png">
+</p>
 
 <br/>
-
-### **SQL 첫걸음 혹은 기타 SQL 책**
-
-- CRUD, Local or Global transaction, DDL 기본 , Index
-- 대부분의 서비스는 CRUD를 무조건적으로 포함한다고 봐야됩니다. 이는 게시판 같은 것에 특정 되는 개념이 아니라 모든 데이터를 다룸에 있어서 통용되는 것입니다.
-- 트랜잭션, 인덱스 개념은 개발자에겐 필수 개념이라고 생각합니다.
-
 <br/>
 
-### **Sevlet API (JSP는 제외)**
-
-- Server - Client Model, HTTP, SSR and CSR, JSON, RESTful API*
-- Servlet은 자바 기반의 "표준" Protocol API이며, HTTP와 기타 Protocol을 처리하는 뼈대가 됩니다. 스프링이나 Vaddin, Struct 같은 프레임워크도 내부적으로는 Servlet을 통해 동작하는 기능들이 있습니다. 자바 기반의 웹 근본 개념 이해를 위해 우선하여 학습하는 것을 추천합니다.
-- [https://lob-dev.tistory.com/entry/CGI-Servlet-Servlet-Container](https://lob-dev.tistory.com/entry/CGI-Servlet-Servlet-Container)
-- [https://lob-dev.tistory.com/entry/01-RESTful-개념과-사전-지식](https://lob-dev.tistory.com/entry/01-RESTful-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%82%AC%EC%A0%84-%EC%A7%80%EC%8B%9D)
-
-<br/>
-
-### **JDBC API**
-
-- JDBC는 자바 기반의 "표준" DB 접근 API이며, Mybatis, JPA 와 같은 SQL Mapper, ORM 프레임워크들도 내부적으로는 JDBC의 Connection과 Statement를 사용하기 때문에 이를 통한 애플리케이션 시점에서의 로컬, 글로벌 트랜잭션 방식을 이해하는 것이 개인적으로 중요하다고 생각합니다.
-- [https://lob-dev.tistory.com/entry/Java-Database-Connectivity-알아보기](https://lob-dev.tistory.com/entry/Java-Database-Connectivity-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0)
-
-<br/>
-
-### **스프링 입문을 위한 자바 객체 지향의 원리와 이해**
-
-- Spring을 학습하기 이전에 JVM의 메모리, 객체 지향 개념과 구현 방식을 다시 복습할 수 있고, Spring에 적용된 디자인 패턴을 선행 학습할 수 있는 좋은 책입니다.
-- [https://lob-dev.tistory.com/entry/책임을-중시하는-객체-지향-디자인의-핵심-개념-GRASP](https://lob-dev.tistory.com/entry/%EC%B1%85%EC%9E%84%EC%9D%84-%EC%A4%91%EC%8B%9C%ED%95%98%EB%8A%94-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90-GRASP)
-
-### **코드로 배우는 스프링 부트 웹 프로젝트**
-
-- 취업이나 상황에 따라 시간이 부족하다면 앞선 책을 건너뛰고 해당 책으로 학습을 하는 것도 추천하기도 합니다. 입문 서적으로는 좋은 책인 것 같습니다.
-
-<br/>
-
-### **인프런 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술**
-
-- 기본적인 Spring Boot 애플리케이션을 경험해볼 수 있는 좋은 입문 강의입니다. MVC 요청 흐름과 템플릿 엔진 등의 개념을 경험해볼 수 있습니다.
-
-<br/>
-
-### **처음 배우는 스프링 부트 2 (Optional)**
-
-- Spring Boot 모듈의 의존성 관리, 자동 설정. 테스트 환경 등을 설명하며 게시판 예제를 통해 Oauth2, Security, RESTful, Batch 등의 기본적인 개념과 예제를 다룹니다.
-
-<br/>
-
-### **개인 프로젝트 진행**
+## **개인 프로젝트 진행**
 
 - 앞에서 경험했던 기술들을 본인만의 요구 사항에 녹이고 적용하여 프로젝트를 진행하시면 좋을 것 같습니다.
 - 모든 방식에는 장단점이 존재하기 때문에. 이를 비교하고 설명할 수 있어야한다고 생각합니다. (물론 저는 못합니다..)
     - ex) 객체 간의 변환 시에 MapStruct를 사용하셨는데 메서드를 통해 작성하는 방법이나 ModelMapper를 사용하는 방식도 있지 않나요? 왜 MapStruct를 사용하셨는지 설명해주실 수 있으실까요? 등..
+    - 사실 라이브러리에 특정되는 질문은 잘 하지 않습니다. RabbitMQ, Redis, No-SQL, SQL 등 상황에 따라 여러 가지를 고려하고 도입한 이유가 더 중요합니다.
+    - 이력서에서 프로젝트에 대한 내용을 작성하실 때에는 본인 만의 요구사항을 위주로 이를 구현한 방법, 어떻게 고려하였는지, 문제가 발생했다면 어떻게 해결하였는지를 요약해서 나열하는 것이 어필하기 좋다고 생각합니다. (저도 처음부터 이렇게 했었으면 더 좋았을 탠데요.. ㅎㅎ;) 
+    - 단순 기술 스택의 나열이나 당연한 이야기들 (DB 연동을 통해 사용자 데이터 영속화 처리를 하였다.. 라던지)을 넣는 것은 그렇게 도움이 되지 않습니다.
 
 <br/>
 
-**이후는 위에 따로 서술된 항목이나 주변의 추천을 통해 추가 학습 진행**
+## **이후 따로 서술된 항목이나 주변의 추천을 통해 심화 및 추가 학습 진행**
+- 이 문서에 정리된 자바, 스프링, SQL 등 정리된 항목의 좀 더 심화적인 책을 학습하고 차근차근 개념을 정리하는 것을 추천합니다.
+- 면접 질문 리스트는 신입 ~ 주니어 (2년차 정도) 수준까지 예상을 하여 작성한 것이기에 쉬운 질문부터 정리해보는 것을 추천합니다.
 
+<br/>
+
+### Spring Security 학습 추천 방식
+- Spring에서 제공하는 인증 및 인가를 담당하는 모듈입니다. 직접 인증 및 인가 기능을 구현하는 것보다는 이미 구현된 모듈을 통해 여러 기능을 제공하고 취약한 부분을 보완하는 것이 더 경제적이기 때문에 Spring Security는 많이 사용됩니다.
+- 이론 학습 위주의 경우 : Java의 Thread Local, Proxy, HttpSession, Cookie, WAS의 JSESSIONID, Servlet의 Filter, Chaining 그리고 인증과 인가의 개념을 학습하신 뒤 보는 것을 추천합니다. (이 개념들을 기반으로 많은 기능들이 구현되어 있습니다.)
+- 프로젝트 기반 학습의 경우 : 이 경우에는 HttpSession과 AOP를 이용하여 인증 및 인가 처리를 구현해보신 다음 Security로 고도화하는 경험을 해보는 것도 좋다고 생각합니다.
+
+<br/>
+
+### 이후에 학습해야 할 것들
+
+- DDD (도메인 주도 설계) : 도메인 주도 설계 철저 입문, 도메인 주도 설계 핵심, 도메인 주도 설계, 도메인 주도 설계 구현 등
+- Message broker or Message Queue : ActiveMQ, RabbitMQ, Kafka, Amazon SQS 등
+- Web Server or Reverse Proxy : Apache, Nginx 등
+- Middleware : HaProxy, ProxySQL 등
+- HA, Failover : Redis Sentinel & Cluster, Galera Cluster, Active-standby, Replication, Micro Service 등
+- Javascript and Library : Node.js Runtime, express, Nest 등
+- Front : React, Svelt, Vue 등
+- CI / CD : Jenkins, Gitlab-Ci, Github Action, Argocd 등
+- Container Orchestration : Kubernetes 등
+- Test : Unit test, Integration test, mock test, TDD, ATDD, Test tools (Ngrinder, K6, Artillery, Jmeter 사용법 등)
+- Etc : Kotlin, Go 등
+       
 <br/>
 
 ---
 
 <br/>
 
-# 프로젝트
+## Sample Projects 
+제 개인적으로 PoC 또는 학습 용도로 만들고 있는 Project Repo 입니다.
+### https://github.com/Lob-dev/The-Joy-Of-Java
+
+<br/>
 
 ## 참고
 
